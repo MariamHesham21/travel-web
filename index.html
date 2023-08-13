@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bootstrap-project-test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.XYZ/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-------------------- navbar ----------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand mx-5" href="#">
+      <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2&3ec60977" alt="logo" style="width:140px;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link text-white mx-1" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white mx-1" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white mx-1" href="#">About Us</a></li>
+        <div class="dropdown mx-2">
+          <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+             Destinations
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-info" href="#">France</a>
+            <a class="dropdown-item text-info" href="#">USA</a>
+            <a class="dropdown-item text-info" href="#">Jaban</a>
+            <div class="dropdown-divider text-info"></div>
+            <a class="dropdown-item text-info" href="#">Italy</a>
+            <a class="dropdown-item text-info" href="#">Morocco</a>
+            <a class="dropdown-item text-info" href="#">Egypt</a>
+            <a class="dropdown-item text-info" href="#">UK</a>
+            <a class="dropdown-item text-info" href="#">Grecce</a>
+            <a class="dropdown-item text-info" href="#">Tailand</a>
+            <a class="dropdown-item text-info" href="#">Turky</a>
+            <a class="dropdown-item text-info" href="#">More....</a>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <form class="form-inline my-2 justify-content-between">
+      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-info my-2" type="submit">Search</button>
+      <button type="button" class="btn btn-info mx-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Login</button>
+    </form>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Register Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true " class="btn-light px-2 rounded fs-1">&times;</span>
+              </button>
+            </div>
+            <div class="m-3">
+              <label for="exampleInputEmail1" class="form-label text-info fw-bolder ">Email address:</label>
+              <input type="email" class="form-control border border-info" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="m-3">
+              <label for="exampleInputPassword1" class="form-label text-info fw-bolder ">Password</label>
+              <input type="password" class="form-control border border-info" id="exampleInputPassword1">
+            </div>
+            <div class="custom-control custom-switch m-3">
+              <input type="checkbox" class="custom-control-input bg-info text-info border-info" id="customSwitch1">
+              <label class="custom-control-label text-muted" for="customSwitch1">Toggle this switch element</label>
+            </div>
+            <div class="modal-footer justify-content-between m-4">
+              <button type="button" class="btn btn-info">Submit</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-------------------- main ----------------------->
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel" style="position: relative;">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./imges/parisSlider.jpg" alt="First slide" style="height:600px;">
+          <div class="carousel-caption d-md-block" style="background-color: #333333a4;">
+            <h2 class="text-info text-uppercase">France</h2>
+            <p class="text-capitalize">Paris is the best city to visit in France</p>
+            <button type="button" class="btn btn-info text-capitalize">show trips</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imges//italySlider.jpg" alt="Second slide" style="height:600px;">
+          <div class="carousel-caption d-md-block" style="background-color: #333333a4;">
+            <h2 class="text-info text-uppercase">italy</h2>
+            <p class="text-capitalize">Rome is the best city to visit in italy</p>
+            <button type="button" class="btn btn-info text-capitalize">show trips</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imges/UkSlider.jpg" alt="Third slide" style="height:600px;">
+          <div class="carousel-caption d-md-block" style="background-color: #333333a4;">
+            <h2 class="text-info text-uppercase">The United Kingdom</h2>
+            <p class="text-capitalize">london is the best city to visit in UK</p>
+            <button type="button" class="btn btn-info text-capitalize">show trips</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imges/japanSlider.jpg" alt="Fourth slide" style="height:600px;">
+          <div class="carousel-caption d-md-block " style="background-color: #333333a4;">
+            <h2 class="text-info text-uppercase">japan</h2>
+            <p class="text-capitalize">tokyo is the best city to visit in japan</p>
+            <button type="button" class="btn btn-info text-capitalize">show trips</button>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </main>
+  <!--------------- main-icons ---------------------->
+  <div class="position-fixed" style="right:5px;top:400px;z-index:1000;">
+    <ul >
+      <li class="my-1 list-group-item rounded-circle" style="background-color: #17a3b8b1;"><a href="#"><i class="fa-brands fa-whatsapp text-white" style="font-size:17px;"></i></a></li>
+      <li class="my-1 list-group-item rounded-circle" style="background-color: #17a3b8b1;"><a href="#"><i class="fa-brands fa-facebook text-white" style="font-size:17px;"></i></a></li>
+      <li class="my-1 list-group-item rounded-circle" style="background-color: #17a3b8b1;"><a href="#"><i class="fa-brands fa-linkedin text-white" style="font-size:17px;"></i></a></li>
+    </ul>
+  </div>
+  <!------------------ text-section ----------------->
+  <section class="container-fluid my-4">
+    <div class="bg-light w-100 m-auto p-4 text-center" id="text-section">
+      <h1 class="text-capitalize">ready to explore the beauty of wonderful world</h1>
+      <p>Boost and lify your mood with a vacation in the most comfortable and best place in the world.</p>
+      <button type="button" class="btn btn-info btn-lg my-3">learn more</button>
+    </div>
+  </section>
+  <!------------- category-section -------------->
+  <section class="container-fluid bg-dark text-white w-100">
+    <div class="container py-3 d-flex justify-content-between ">
+      <div>
+        <h2 class="text-uppercase my-4">-- categories</h2>
+        <p class="text-capitalize mx-2 mx-md-5 w-100">much destinations here but don't be confusel<br/>it's already grouped by category</p>
+      </div>
+      <div class="my-4" id="foucs-id">
+        <i class="fa-solid fa-circle-arrow-left text-light mx-2" style="font-size: 28px;"></i>
+        <i class="fa-solid fa-circle-arrow-right text-light mx-2" style="font-size: 28px;"></i>
+      </div>
+    </div>
+    <div class="row justify-content-around text-center mx-3">
+      <div class="col-12 col-md-6 col-lg-2 my-1">
+        <img src="https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pho" style="width: 250px; height: 280px; border-radius: 150px 150px 0 0;">
+        <h4 class="text-capitalize my-2">beach</h4>
+      </div>
+      <div class="col-12 col-md-6  col-lg-2 my-1">
+        <img src="https://images.pexels.com/photos/3689863/pexels-photo-3689863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pho" style="width: 250px; height: 280px; border-radius: 150px 150px 0 0;">
+        <h4 class="text-capitalize my-2">history</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 my-1">
+        <img src="https://images.pexels.com/photos/4215113/pexels-photo-4215113.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pho" style="width: 250px; height: 280px; border-radius: 150px 150px 0 0;">
+        <h4 class="text-capitalize my-2">mountain</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 my-1">
+        <img src="https://images.pexels.com/photos/17654167/pexels-photo-17654167/free-photo-of-kiyomizu-dera-temple-in-kyoto.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pho" style="width: 250px; height: 280px; border-radius: 150px 150px 0 0;">
+        <h4 class="text-capitalize my-2">temple</h4>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 my-1">
+        <img src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pho" style="width: 250px; height: 280px; border-radius: 150px 150px 0 0;">
+        <h4 class="text-capitalize my-2">city</h4>
+      </div>
+    </div>
+  </section>
+  <!------------ destination-section ------------->
+  <section class="container-fluid bg-light p-3">
+    <div class="bg-light w-100 m-auto p-4 text-center" id="text-section">
+      <h1 class="text-capitalize">top destination for you</h1>
+      <div class="line"></div>
+      <div class="line"></div>
+      <p>much places suits your mood. explore some where interesting and enjoy the vibes!</p>
+    </div>
+    <div class="container-fluid row justify-content-around mx-3 text-center">
+      <div class="col-12 col-md-6 col-lg-4 my-1">
+        <div class="card w-100 p-2">
+          <img class="card-img-top" src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&w=600" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">paris</h3>
+            <p class="card-text text-capitalize"><i class="fa-solid fa-location-dot text-info mx-2"></i>this city is located in <span class="text-info">france</span></p>
+              <a class="btn btn-info w-100" data-toggle="collapse" href="#collapseOne">
+                Simple collapsible<i class="fa-solid fa-angles-right mx-2"></i>
+              </a>
+              <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1">
+        <div class="card w-100 p-2">
+          <img class="card-img-top" src="https://images.pexels.com/photos/5011944/pexels-photo-5011944.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">new york</h3>
+            <p class="card-text text-capitalize"><i class="fa-solid fa-location-dot text-info mx-2"></i>this city is located in <span class="text-info">USA</span></p>
+            <a class="btn btn-info w-100" data-toggle="collapse" href="#collapseTwo">
+              Simple collapsible<i class="fa-solid fa-angles-right mx-2"></i>
+            </a>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1">
+        <div class="card w-100 p-2">
+          <img class="card-img-top" src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">rome</h3>
+            <p class="card-text text-capitalize"><i class="fa-solid fa-location-dot text-info mx-2"></i>this city is located in <span class="text-info">italy</span></p>
+            <a class="btn btn-info w-100" data-toggle="collapse" href="#collapsethree">Simple collapsible<i class="fa-solid fa-angles-right mx-2"></i></a>
+            <div id="collapsethree" class="collapse" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1">
+        <div class="card w-100 p-2">
+          <img class="card-img-top" src="https://images.pexels.com/photos/13420332/pexels-photo-13420332.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">cairo</h3>
+            <p class="card-text text-capitalize"><i class="fa-solid fa-location-dot text-info mx-2"></i>this city is located in <span class="text-info">egypt</span></p>
+            <a class="btn btn-info w-100" data-toggle="collapse" href="#collapsefoure">Simple collapsible<i class="fa-solid fa-angles-right mx-2"></i></a>
+            <div id="collapsefoure" class="collapse" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1">
+        <div class="card w-100 p-2">
+          <img class="card-img-top" src="https://images.pexels.com/photos/16388581/pexels-photo-16388581/free-photo-of-cityscape-of-istanbul-turkey.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">istanbul</h3>
+            <p class="card-text text-capitalize"><i class="fa-solid fa-location-dot text-info mx-2"></i>this city is located in <span class="text-info">turky</span></p>
+            <a class="btn btn-info w-100" data-toggle="collapse" href="#collapsefive">Simple collapsible<i class="fa-solid fa-angles-right mx-2"></i></a>
+            <div id="collapsefive" class="collapse" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1">
+        <div class="card w-100 p-2">
+          <img class="card-img-top" src="https://images.pexels.com/photos/2067048/pexels-photo-2067048.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">tokyo</h3>
+            <p class="card-text text-capitalize"><i class="fa-solid fa-location-dot text-info mx-2"></i>this city is located in <span class="text-info">japan</span></p>
+            <a class="btn btn-info w-100" data-toggle="collapse" href="#collapsesix">Simple collapsible<i class="fa-solid fa-angles-right mx-2"></i></a>
+            <div id="collapsesix" class="collapse" data-bs-parent="#accordion">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------ img-section ------------->
+  <section class="container-fluid py-5 text-light" id="img-section">
+    <div class="img-container">
+    </div>
+  </section>
+  <!------------ about-section ------------->
+  <section class="container bg-light my-3">
+    <div class="row container m-auto py-4 justify-content-between">
+      <div class="col-12 col-md-5">
+        <img src="https://images.pexels.com/photos/4353813/pexels-photo-4353813.jpeg?auto=compress&cs=tinysrgb&w=600" alt="travel-img" class="w-100 rounded-circle" style="height:550px;">
+      </div>
+      <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center py-4 ">
+        <span class="text-capitalize text-dark">from our sponsers</span>
+        <h3 class="text-uppercase w-100 ">travelocity, Three Unforgettable Ways</h3>
+        <p>Whether you're traveling solo, in the throes of romance, or with your family, there are many different ways to experience the City of Light. In partnership with Delta Vacations, we'll show you how you can use miles to do more.</p>
+      </div>
+    </div>
+  </section>
+  <!------------ translate-section ------------->
+  <section class="container-fluid bg-dark">
+    <div class="container-fluid py-3 w-100">
+      <a class="btn btn-info w-100 text-dark text-center text-capitalize" data-toggle="collapse" href="#collapseOnes">
+        <h3>translate from english to arabic</h3>
+      </a>
+      <div id="collapseOnes" class="collapse text-light my-2 show" data-bs-parent="#accordion">
+          <div class="mb-3">
+            <p class="text-capitalize"> write and translate <a href="#"><span class="text-info">press here</span></a></p>
+            <button class="btn btn-info my-2" id="copy-btn" data-toggle="popover" title="Copy This Text!" >Copy Text</button>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="translate"></textarea>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid py-3 w-100">
+      <a class="btn btn-info w-100 text-dark text-center text-capitalize" data-toggle="collapse" href="#collapseTwos">
+        <h3>translate from english to french</h3>
+      </a>
+      <div id="collapseTwos" class="collapse text-light my-2" data-bs-parent="#accordion">
+          <div class="mb-3">
+            <p class="text-capitalize"> write and translate<a href="#"><span class="text-info">press here</span></a></p>
+            <button class="btn btn-info my-2" id="copy-btn" data-toggle="popover" title="Copy This Text!">Copy Text</button>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="translate"></textarea>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid py-3 w-100">
+      <a class="btn btn-info w-100 text-dark text-center text-capitalize" data-toggle="collapse" href="#collapseThrees">
+        <h3>translate from english to italian</h3>
+      </a>
+      <div id="collapseThrees" class="collapse text-light my-2" data-bs-parent="#accordion">
+          <div class="mb-3">
+            <p class="text-capitalize"> write and translate<a href="#"><span class="text-info">press here</span></a></p>
+            <button class="btn btn-info my-2" id="copy-btn" data-toggle="popover" title="Copy This Text!">Copy Text</button>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="translate"></textarea>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!------------ popular-section ------------->
+  <section class="container-fluid bg-light">
+    <div class="bg-light w-100 m-auto p-4 text-center" id="text-section">
+      <h1 class="text-capitalize">Explore Popular Destination</h1>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="container-fluid row justify-content-between ml-2">
+      <div class="col-12 col-md-6 col-lg-4 my-1 w-100" style="position: relative;">
+          <div class="card w-100 bg-dark text-light shadow" id="befor-after">
+            <img class="card-img-top" src="https://images.pexels.com/photos/16281383/pexels-photo-16281383/free-photo-of-top-view-of-komodo-national-park-indonesia.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image" style="width:100%; height: 400px;">
+            <div class="card-body">
+              <div class="card-text d-flex w-100">
+                <h3 class="card-title text-info w-50">Komodo Island</h3>
+                  <div class="card-btn w-50 text-center mr-2">
+                     <a href="#" class="btn btn-info ">Details</a>
+                  </div>
+              </div> 
+              <p class="card-text">Komodo Island is one of the islands of Indonesia</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1 w-100">
+        <div class="card w-100 bg-dark text-light shadow " id="befor-after">
+          <img class="card-img-top" src="https://images.pexels.com/photos/13070498/pexels-photo-13070498.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Card image" style="width:100%; height: 400px;">
+          <div class="card-body">
+            <div class="card-text d-flex w-100">
+              <h3 class="card-title text-info w-50">Marrakesh</h3>
+                <div class="card-btn w-50 text-center mr-2">
+                   <a href="#" class="btn btn-info ">Details</a>
+                </div>
+            </div> 
+            <p class="card-text">Marrakech is a city in Morocco called the Red City </p>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1 w-100">
+        <div class="card w-100 bg-dark text-light shadow " id="befor-after">
+          <img class="card-img-top" src="https://images.pexels.com/photos/17622464/pexels-photo-17622464/free-photo-of-tropical-beach-by-the-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image" style="width:100%; height: 400px;">
+          <div class="card-body">
+            <div class="card-text d-flex w-100">
+              <h3 class="card-title text-info w-50">Phuket Island</h3>
+                <div class="card-btn w-50 text-center mr-2">
+                   <a href="#" class="btn btn-info ">Details</a>
+                </div>
+            </div> 
+            <p class="card-text">Phuket Island It is the largest island in Thailand</p>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1 w-100">
+        <div class="card w-100 bg-dark text-light shadow "  id="befor-after">
+          <img class="card-img-top" src="https://images.pexels.com/photos/7974668/pexels-photo-7974668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image" style="width:100%; height: 400px;">
+          <div class="card-body">
+            <div class="card-text d-flex w-100">
+              <h3 class="card-title text-info w-50">Sharm ElShaikh</h3>
+                <div class="card-btn w-50 text-center mr-2">
+                   <a href="#" class="btn btn-info ">Details</a>
+                </div>
+            </div> 
+            <p class="card-text">Sharm ElSheikh is Egyptian city located on Red Sea</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1 w-100">
+        <div class="card w-100 bg-dark text-light shadow "  id="befor-after">
+          <img class="card-img-top" src="https://images.pexels.com/photos/3264723/pexels-photo-3264723.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image" style="width:100%; height: 400px;">
+          <div class="card-body">
+            <div class="card-text d-flex w-100">
+              <h3 class="card-title text-info w-50">Mykonos Island</h3>
+                <div class="card-btn w-50 text-center mr-2">
+                   <a href="#" class="btn btn-info ">Details</a>
+                </div>
+            </div> 
+            <p class="card-text">Mykonos is a Greek island, part of the Cyclades</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-1 w-100">
+        <div class="card w-100 bg-dark text-light shadow "  id="befor-after">
+          <img class="card-img-top" src="https://images.pexels.com/photos/12282043/pexels-photo-12282043.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card image" style="width:100%; height: 400px;">
+          <div class="card-body">
+            <div class="card-text d-flex w-100">
+              <h3 class="card-title text-info w-50">Mexico City</h3>
+                <div class="card-btn w-50 text-center mr-2">
+                   <a href="#" class="btn btn-info ">Details</a>
+                </div>
+            </div> 
+            <p class="card-text">Mexico City is the federal capital of Mexico</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!------------ fixedimg-section ------------->
+<section class="container-fluid text-light my-2" id="fixedimg-section">
+  <div class="img-container">
+    <div class="text-overlay">
+    </div>
+  </div>
+</section>
+<!------------ News-section ------------->
+<section class="container-fluid p-2">
+  <div class="mx-auto my-1 bg-dark justify-content-between d-flex shadow-lg" style="border-radius: 18px;" id="News-media">
+    <div class="news-text w-md-75 w-100 p-3 p-md-5">
+      <h3 class="text-info text-capitalize">Jaban Country</h3>
+      <div class="d-flex text-light" >
+        <i class="fa-solid fa-calendar-days mx-3"></i>
+        <p>Mon: 21-Ag-2023</p>
+      </div>
+      <div class="bg-info w-25 ml-2" style="height:4px;"></div>
+      <p class="text-light my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. repudiandae corrupti blanditiis, tempore vitae vel, laborum odio? Quam illum accusamus suscipit atque porro, assumenda reprehenderit quibusdam rerum ab laborum fugit ipsa. Eaque aliquid earum culpa. Expedita eos at aliquam, laborum vitae perspiciatis tenetur officiis sequi veritatis atque voluptatum?</p>
+      <div class="mt-md-5 row">
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-utensils mx-2"></i> Restaurants</a>
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-water-ladder mx-2"></i> Things To Do</a>
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-snowflake mx-2"></i> Best Time To Vist</a>
+      </div>
+    </div>
+    <div class="news-img w-md-25 w-100">
+      <img src="https://images.pexels.com/photos/15925236/pexels-photo-15925236/free-photo-of-people-walking-between-buildings-in-city-in-the-evening.jpeg?auto=compress&cs=tinysrgb&w=600" alt="new-img" style="width: 100%;" >
+    </div>
+  </div>
+  <div class="mx-auto my-1 bg-dark justify-content-between d-flex shadow-lg" style="border-radius: 18px;" id="News-mediaa">
+    <div class="news-imgr w-md-25 w-100">
+      <img src="https://images.pexels.com/photos/9490706/pexels-photo-9490706.jpeg?auto=compress&cs=tinysrgb&w=600" alt="new-img" style="width: 100%;" >
+    </div>
+    <div class="news-text text-info w-md-75 w-100 p-3 p-md-5">
+      <h3 class="text-info">York City </h3>
+      <div class="d-flex text-light" >
+        <i class="fa-solid fa-calendar-days mx-3"></i>
+        <p>Mon: 21-Ag-2023</p>
+      </div>
+      <div class="bg-info w-25 ml-2" style="height:4px;"></div>
+      <p class="text-light my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. repudiandae corrupti blanditiis, tempore vitae vel, laborum odio? Quam illum accusamus suscipit atque porro, assumenda reprehenderit quibusdam rerum ab laborum fugit ipsa. Eaque aliquid earum culpa. Expedita eos at aliquam, laborum vitae perspiciatis tenetur officiis sequi veritatis atque voluptatum?</p>
+      <div class="mt-md-5 row">
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-utensils mx-2"></i> Restaurants</a>
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-water-ladder mx-2"></i> Things To Do</a>
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-snowflake mx-2"></i> Best Time To Vist</a>
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto my-1 bg-dark justify-content-between d-flex shadow-lg" style="border-radius: 18px;" id="News-media">
+    <div class="news-text w-md-75 w-100 p-3 p-md-5">
+      <h3 class="text-info text-capitalize">Dubai City </h3>
+      <div class="d-flex text-light" >
+        <i class="fa-solid fa-calendar-days mx-3"></i>
+        <p>Mon: 21-Ag-2023</p>
+      </div>
+      <div class="bg-info w-25 ml-2" style="height:4px;"></div>
+      <p class="text-light my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. repudiandae corrupti blanditiis, tempore vitae vel, laborum odio? Quam illum accusamus suscipit atque porro, assumenda reprehenderit quibusdam rerum ab laborum fugit ipsa. Eaque aliquid earum culpa. Expedita eos at aliquam, laborum vitae perspiciatis tenetur officiis sequi veritatis atque voluptatum?</p>
+      <div class="mt-md-5 row">
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-utensils mx-2"></i> Restaurants</a>
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-water-ladder mx-2"></i> Things To Do</a>
+        <a href="#" class="bg-info text-light p-2 m-1 text-decoration-none"><i class="fa-solid fa-snowflake mx-2"></i> Best Time To Vist</a>
+      </div>
+    </div>
+    <div class="news-img w-md-25 w-100">
+      <img src="https://images.pexels.com/photos/1534411/pexels-photo-1534411.jpeg?auto=compress&cs=tinysrgb&w=600" alt="new-img" style="width: 100%;" >
+    </div>
+  </div>
+</section>
+<!------------ Review-section ------------->
+<section class="container-fluid bg-light">
+  <div class="w-100 m-auto p-4 text-center" id="text-section">
+    <h1 class="text-capitalize">Review section</h1>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="row justify-content-between mx-5">
+    <div class="col-12 col-md-6 col-lg-4 my-1 " id="scale-card">
+      <div class="card w-100 shadow-lg" style="border-radius:30px; outline: none; height:500px;">
+        <img class="card-img-top h-100" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="border-radius:30px;position: relative;">
+        <div class="card-body d-flex flex-column w-100 h-100 justify-content-between" id="cards-info" style="border-radius:30px;">
+          <div>
+            <h3>All thanks and support</h3>
+            <p><i class="fa-solid fa-clock"></i> October 15-2023</p>
+          </div>
+          <div>
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img-eng"  style="width: 100px; height: 100px; border-radius: 60px;">
+            <h3 style="color: black;">Eng Tom Johan</h3>
+            <p>Electronics Engineer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 my-1" id="scale-card">
+      <div class="card w-100 shadow-lg" style="border-radius:30px; outline: none; height:500px;">
+        <img class="card-img-top h-100" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="border-radius:30px;position: relative;">
+        <div class="card-body d-flex flex-column w-100 h-100 justify-content-between" id="cards-info" style=" border-radius:30px;">
+          <div>
+            <h3>All thanks and support</h3>
+            <p><i class="fa-solid fa-clock"></i> October 15-2023</p>
+          </div>
+          <div>
+            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img-eng" style="width: 100px; height: 100px; border-radius: 60px;">
+            <h3 style="color: black;">Eng Tom Johan</h3>
+            <p>Electronics Engineer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 my-1" id="scale-card">
+      <div class="card w-100 shadow-lg" style="border-radius:30px; outline: none; height:500px;">
+        <img class="card-img-top h-100" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" style="border-radius:30px;position: relative;">
+        <div class="card-body d-flex flex-column w-100 h-100 justify-content-between" id="cards-info" style="border-radius:30px;">
+          <div>
+            <h3>All thanks and support</h3>
+            <p><i class="fa-solid fa-clock"></i> October 15-2023</p>
+          </div>
+          <div>
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img-eng" style="width: 100px; height: 100px; border-radius: 60px;">
+            <h3 style="color: black;">Eng Tom Johan</h3>
+            <p>Electronics Engineer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!------------ footer-section ------------->
+<footer class="container-fluid bg-dark text-light p-4">
+  <div class="row justify-content-between mx-md-5">
+    <div class="col-md-4 col-12">
+      <h2 class="mt-4" style="color: white;">TRAVELOCITY</h2>
+      <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit similique tempora animi enim hic architecto maiores nostrum facilis suscipit quos quas sed natus, asperiores ipsam minima blanditiis unde amet culpa.</p>
+      <div>
+        <a href="#" class="text-light mx-2" style="font-size: 25px;"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-light mx-2" style="font-size: 25px;"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#" class="text-light mx-2" style="font-size: 25px;"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="text-light mx-2" style="font-size: 25px;"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </div>
+    <div class="col-md-3 col-12">
+      <h3 class="mt-4" style="color: white;">Navigate</h3>
+      <h5 class="m-3">Home</h5>
+      <h5 class="m-3">Destination</h5>
+      <h5 class="m-3">Services</h5>
+      <h5 class="m-3">About Us</h5>
+      <h5 class="m-3">Review</h5>
+    </div>
+    <div class="col-md-3 col-12">
+      <h3 class="mt-4" style="color: white;">Support Us</h3>
+      <h5 class="m-3">FAQ</h5>
+      <h5 class="m-3">Contact Us</h5>
+      <h5 class="m-3">Support Center</h5>
+    </div>
+  </div>
+  <div class="bg-light m-auto" style="width: 95%;height:1px;"></div>
+  <div class="row justify-content-between text-center my-4">
+    <div class="col-4">
+      <h5 class="text-info">Tel:<span class="text-light"> 0123 456 789</span></h5>
+    </div>
+    <div class="col-4">
+      <h5 class="text-info">Address:<span class="text-light"> Cairo - Egypt</span></h5>
+    </div>
+    <div class="col-4">
+      <h5 class="text-info">FAX:<span class="text-light"> 000 000 000</span></h5>
+    </div>
+  </div>
+  <div class="bg-light m-auto" style="width: 95%;height:1px;"></div>
+  <div class="row justify-content-between text-center my-2">
+    <div class="col-md-3 col-12">
+      <p class="text-light">Travel 2023 All Rights Reserved</p>
+    </div>
+    <div class="col-md-3 col-12">
+      <p class="text-light">Terms & Conditions . Privacy Policy . Sitemap </p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.XYZ/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.XYZ/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.XYZ/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
